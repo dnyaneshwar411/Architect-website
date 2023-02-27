@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color1: #ff7a00;
+    --color2: #333;
+    text-transform: capitalize;
+    /* overflow-x: hidden; */
+}
+
+body {
+    background-color: var(--color1);
+    font-family: 'Exo 2', sans-serif;
+}
+
+h1 {
+    color: black;
+    font-size: 4rem;
+    font-weight: 300;
+    position: relative;
+    letter-spacing: 8px;
+}
+
+h3 {
+    color: var(--color1);
+    font-size: 1.5em;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-image: url('Images/diningRoom.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+header nav {
+    background-color: white;
+    padding: 1em 4em 1em 2em;
+    z-index: 3;
+    box-shadow: 3px 3px 8px black;
+}
+
+header nav #branding {
+    gap: 0.8em;
+    cursor: pointer;
+}
+
+header nav ul {
+    list-style: none;
+    gap: 1em;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--color2);
+    font-weight: 500;
+}
+
+#Home .headerCon {
+    height: 55em;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url('livingRoom.avif');
+    z-index: -1;
+}
+
+#Home .headerCon h1 {
+    font-size: 4.5rem;
+    color: black;
+    position: relative;
+    top: 30%;
+    left: 10%;
+    z-index: 2;
+    display: inline;
+}
+
+#Home .headerCon h1::before {
+    content: '';
+    background-color: white;
+    position: absolute;
+    z-index: -1;
+    top: -0.0075em;
+    bottom: -0.0075em;
+    right: -0.25em;
+    left: -0.25em;
+    box-shadow: 4px 4px 10px #333;
+}
+
+#Home .headerCon h2 {
+    font-size: 2.8rem;
+    color: white;
+    position: relative;
+    top: 35%;
+    left: 10%;
+    z-index: 2;
+    display: inline;
+}
+
+#Home .headerCon h2::before {
+    content: '';
+    background-color: var(--color1);
+    position: absolute;
+    z-index: -1;
+    top: -0.0075em;
+    bottom: -0.0075em;
+    right: -0.25em;
+    left: -0.25em;
+    box-shadow: 4px 4px 10px #333;
+}
+
+#Home .headerCon .numbers {
+    z-index: 2;
+    background-color: white;
+    width: 100%;
+    padding: 2em 3em;
+    position: relative;
+    top: 57.865%;
+}
+
+#Home .headerCon .numbers p {
+    font-size: 3em;
+}
+
+#Home .headerCon .numbers .flex {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    padding: 2em;
+    width: 15em;
+}
+
+#Home .headerCon .flex {
+    justify-content: space-evenly;
+}
+
+#About {
+    padding: 6em 2em 3em;
+    background-color: white;
+    text-align: center;
+}
+
+#About h1 {
+    z-index: 2;
+    display: inline;
+}
+
+
+#About h1::before {
+    content: '';
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 52%;
+    left: 8%;
+    background-color: var(--color1);
+    z-index: -2;
+}
+
+.aboutCon {
+    padding: 7em 1em 4em;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+.aboutCon .imges {
+    position: relative;
+    width: 25em;
+    height: 25em;
+    z-index: 2;
+}
+
+.aboutCon .imges img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.aboutCon .imges::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ff7a00;
+    z-index: -1;
+    top: 10%;
+    right: -10%;
+}
+
+.aboutCon .abouInfo {
+    margin-top: 3em;
+    text-align: justify;
+    width: 42em;
+    padding: 1.5em;
+}
+
+.aboutCon .abouInfo h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    margin-inline: auto;
+}
+
+.aboutCon .abouInfo p {
+    font-size: 1.1em;
+    margin-bottom: 1rem;
+}
+
+.aboutCon .abouInfo .socials {
+    font-size: 1.6em;
+    margin-left: 0.4rem;
+    margin-inline: auto;
+    width: 40%;
+    color: white;
+}
+
+.aboutCon .abouInfo .socials i {
+    cursor: pointer;
+    border-radius: 0.5rem;
+    text-align: center;
+    line-height: 2;
+    background-color: #333;
+    height: 2em;
+    width: 2em;
+}
+
+.aboutCon .abouInfo .socials i:hover {
+    background-color: #ff7a00;
+}
+
+#Services {
+    text-align: center;
+    padding: 6em 3em 4em;
+    background-color: white;
+}
+
+#Services h1 {
+    z-index: 2;
+    display: inline;
+}
+
+#Services h1::before {
+    content: '';
+    position: absolute;
+    height: 10%;
+    width: 95%;
+    top: 52%;
+    left: 8%;
+    background-color: var(--color1);
+    z-index: -2;
+}
+
+#Services .cardList {
+    padding: 4em;
+    gap: 5em;
+    justify-content: center;
+}
+
+#Services .cardList .card {
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 2em;
+    height: 18rem;
+    width: 17rem;
+    background-color: white;
+    padding: 1em 0.5rem;
+    box-shadow: 0px 1px 8px black;
+}
+
+#Services .cardList .card::before,
+#Services .cardList .card::after {
+    content: '';
+    position: absolute;
+    background-color: var(--color1);
+    height: 100%;
+    width: 2%;
+}
+
+#Services .cardList .card::before {
+    left: 0;
+}
+
+#Services .cardList .card::after {
+    right: 0;
+}
+
+#Services .cardList .card i {
+    font-size: 3rem;
+    color: var(--color1);
+    margin-bottom: 1rem;
+}
+
+#Project {
+    padding: 6em 3em 3em;
+    background-color: #333;
+    text-align: center;
+}
+
+#Project h1 {
+    color: white;
+    z-index: 2;
+    display: inline;
+}
+
+
+#Project h1::before {
+    content: '';
+    position: absolute;
+    height: 10%;
+    width: 95%;
+    top: 52%;
+    left: 8%;
+    background-color: var(--color1);
+    z-index: -2;
+}
+
+#Project .cardList {
+    padding: 2em;
+    display: flex;
+}
+
+#Project .cardList .card {
+    padding: 2em;
+    gap: 5em;
+    justify-content: center;
+}
+
+#Project .cardList .card img {
+    position: relative;
+    border-radius: 0.3rem;
+    box-shadow: 1px 1px 8px grey, -1px -1px 8px grey;
+    height: 18rem;
+    width: 18rem;
+    transition: transform 0.25s ease-in-out;
+    object-fit: cover;
+}
+
+#Project .cardList .card img:hover {
+    position: relative;
+    transform: scale(1.1);
+    bottom: 0.4rem;
+}
+
+#Contact {
+    padding: 6em 1em 3em;
+    background-color: white;
+    text-align: center;
+}
+
+#Contact h1 {
+    z-index: 2;
+    display: inline;
+}
+
+#Contact h1::before {
+    content: '';
+    position: absolute;
+    height: 10%;
+    width: 95%;
+    top: 52%;
+    left: 8%;
+    background-color: var(--color1);
+    z-index: -2;
+}
+
+#Contact .cardList {
+    padding: 6rem 0rem 3rem;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+#Contact .cardList .card {
+    width: 25rem;
+    height: 12rem;
+    box-shadow: 1px 1px 8px black;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#Contact .cardList .card i {
+    color: var(--color1);
+    font-size: 3rem;
+}
+
+#Contact .cardList .card p {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#Contact form {
+    padding: 3em;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 8px grey;
+    gap: 1rem;
+    justify-content: space-around;
+    margin-inline: 1.4rem;
+}
+
+#Contact form input {
+    padding: 0.6rem;
+    border: none;
+    box-shadow: 1px 1px 5px grey;
+}
+
+#Contact form [type="email"] {
+    width: 90rem;
+    min-width: 15rem;
+}
+
+#Contact form .txt {
+    width: 41rem;
+}
+
+#Contact form .msg {
+    width: 90rem;
+    height: 8rem;
+}
+
+#Contact form [type="submit"] {
+    background-color: var(--color1);
+    color: white;
+    padding: 12px 1.3rem;
+    cursor: pointer;
+    transition: transform 0.25s ease-in;
+}
+
+#Contact form [type="submit"]:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #333;
+    padding-block: 1em 2em;
+    text-align: center;
+}
+
+footer hr {
+    margin-bottom: 2em;
+    background-color: grey;
+}
+
+footer .footerCon {
+    padding: 3em 5em;
+    justify-content: space-evenly;
+}
+
+footer .footerCon div {
+    text-align: center;
+    width: 20rem;
+    font-size: 3rem;
+    margin-block-start: 0;
+}
+
+footer .footerCon div i {
+    color: var(--color1);
+    font-size: 4rem;
+}
+
+footer .footerCon div span {
+    color: var(--color1);
+}
+
+footer .footerCon div p {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+footer .footerCon div h4 {
+    font-size: 1.7rem;
+}
+
+footer .footerCon div ul {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+footer .footerCon div ul a {
+    color: rgb(199, 191, 191);
+}
+
+footer .footerCon div h3 {
+    font-size: 1.2rem;
+}
+
+footer .footerCon div input[type="email"] {
+    border: 2px solid white;
+    background-color: transparent;
+    padding: 10px 18px;
+    width: 100%;
+}
+
+footer .footerCon div input[type="submit"] {
+    border: none;
+    background-color: white;
+    font-weight: 700;
+    padding: 10px 18px;
+    transition: transform 0.25s ease-in;
+}
+
+footer .footerCon div input[type="submit"]:hover {
+    transform: scale(1.1);
+}
+
+footer h2 {
+    color: white;
+}
+
+footer h2 span {
+    color: var(--color1);
+}
+
+
+
+
+
+
+
+
+@media (max-width:750px) {
+    html {
+        font-size: 55%;
+    }
+}
